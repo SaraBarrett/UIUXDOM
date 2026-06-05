@@ -24,3 +24,27 @@ function changeTaste() {
     mySpan.innerText = "Yack";
   }
 }
+
+//pp 20
+function eggOrChicken() {
+  let myImage = document.querySelector("img");
+  let chickenImg = "https://devsprouthosting.com/images/chicken.jpg";
+  let eggImg = "https://devsprouthosting.com/images/egg.jpg";
+
+  if (myImage.src == chickenImg) {
+    myImage.src = eggImg;
+  } else {
+    myImage.src = chickenImg;
+  }
+}
+
+//pp 22
+function changeStyle() {
+  let myContainer = document.querySelector("#container");
+  myContainer.style.textAlign = "center";
+
+  let myImg = document.querySelector("img");
+
+  myImg.style.width = "150px";
+  myImg.style.borderRadius = "50%";
+}
