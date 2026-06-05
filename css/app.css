@@ -57,9 +57,18 @@ img.square {
 .night {
     background-color: black;
     color: white;
+
 }
 
 .day {
     background-color: white;
     color: black;
+}
+
+.btn-day {
+    background-color: #561e8f;
+}
+
+.btn-night {
+    background-color: aquamarine;
 }

@@ -48,3 +48,26 @@ function changeStyle() {
   myImg.style.width = "150px";
   myImg.style.borderRadius = "50%";
 }
+
+//pp 24
+function makeRandom() {
+  const colors = [
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "blue",
+    "indigo",
+    "violet",
+  ];
+
+  let mySpans = document.getElementsByTagName("span");
+
+  let i = 0;
+  
+  for (let element of mySpans) {
+    element.style.color = colors[i++];
+  }
+
+
+}
