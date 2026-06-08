@@ -1,19 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>100 Buttons!</title>
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100 Buttons!</title>
+    <script src="../js/exs.js" defer></script>
+  </head>
+  <body>
     <h1>Look At All My Buttons!</h1>
     <div id="container">
-        
-        <button onclick="createBtns()">Create 100Btns</button>
-    
+      <button onclick="createBtns()">Create 100Btns</button>
+
+      <button onclick="randomColor()">Random Color</button>
+      <p>Cor: <span>não atribuída</span></p>
+
+      <h6>Calculadora</h6>
+      <input type="number" id="num1" />
+      <select id="operator">
+        <option value="">--Please choose an option--</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <input type="number" id="num2" />
+      <button onclick="calc()">=</button>
+      <p>Total: <span id="total">0</span></p>
     </div>
-
-</body>
-
+  </body>
 </html>
