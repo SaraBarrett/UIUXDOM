@@ -71,3 +71,23 @@ function makeRandom() {
 
 
 }
+
+//pp 26
+
+function changeOrder(){
+  let myLis = document.querySelectorAll('li');
+
+  for(let element of myLis){
+  console.log(element.parentElement);
+
+    if(element.classList.contains('highlight')){
+      element.classList.remove('highlight');
+    }else{
+      element.classList.add('highlight');
+    }
+
+
+  }
+
+
+}

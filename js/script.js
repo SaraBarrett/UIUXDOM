@@ -74,3 +74,20 @@ function changeMode() {
     }
   }
 }
+
+function login() {
+  //criar elementos
+  let userName = prompt("qual é o seu nome?");
+  //1passo: criar elemento
+  let myP = document.createElement("p");
+  myP.innerText = "olá " + userName;
+
+  //seleccionar o pai para o elemento
+  let myParent = document.getElementById("login-message");
+
+  myParent.appendChild(myP);
+
+  //escondemos o botão
+  let myBtn = myParent.previousElementSibling;
+  myBtn.style.display = "none";
+}
