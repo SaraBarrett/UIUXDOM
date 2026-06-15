@@ -4,6 +4,7 @@ console.log(myBanner);
 //passo 1: seleccionar
 let myH1 = document.querySelector("h1");
 console.log(myH1);
+let btnChangeMode = document.getElementById("change-mode");
 
 function changeLang() {
   if (myH1.innerText == "Silkie Chickens") {
@@ -91,3 +92,11 @@ function login() {
   let myBtn = myParent.previousElementSibling;
   myBtn.style.display = "none";
 }
+
+btnChangeMode.addEventListener("click", changeMode);
+
+btnChangeMode.addEventListener("click", function () {
+  alert("botão de modo dia e noite!");
+});
+
+myBanner.addEventListener('mouseover', changeMode);
