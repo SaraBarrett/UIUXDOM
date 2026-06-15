@@ -1,6 +1,9 @@
 //pp 9
 let image = document.getElementById("unicorn");
 let heading = document.getElementById("mainheading");
+let btnEvents = document.getElementById("events");
+let randomColorBtn = document.getElementById("random-color");
+let createBtnsEl = document.getElementById("create-bts");
 
 console.log(image);
 console.log(heading);
@@ -105,6 +108,27 @@ function randomColor() {
 
   let color = "rgb(" + r + "," + b + "," + g + ")";
 
-  myBody.style.backgroundColor = color;
+  this.style.backgroundColor = color;
+
   mySpan.innerText = color;
 }
+
+//pp 38
+//seleccção do elemento
+
+//funções
+function twist() {
+  console.log("TWIIISSTTT");
+}
+
+function shout() {
+  console.log("SHHOOOUUTTT");
+}
+
+//colocar botões à escuta
+btnEvents.addEventListener("click", twist);
+btnEvents.addEventListener("mouseover", shout);
+
+randomColorBtn.addEventListener("click", randomColor);
+createBtnsEl.addEventListener("click", createBtns);
+btnEvents.addEventListener("click", randomColor);
