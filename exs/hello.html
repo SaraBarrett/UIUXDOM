@@ -1,21 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello</title>
-  
-</head>
+    <script src="../js/script.js" defer></script>
+  </head>
 
-<body>
+  <body>
     <div id="container">
-    <h1>Click These Buttons</h1>
-    <p>And Prepare To Have Your Mind Blown</p>
-    <button id="hello">Hello</button>
-    <button id="goodbye">Goodbye</button>
+      <h1>Click These Buttons</h1>
+      <p>And Prepare To Have Your Mind Blown</p>
+      <button id="hello">Hello</button>
+      <button id="goodbye">Goodbye</button>
 
-</div>
+      <h4>O nosso Zoo</h4>
+      <form id="animalFarm" action="/server.js">
+        <label for="">Nome do Animal</label>
+        <input type="text" name="animal" />
+        <label for="">cor</label>
+        <input type="color" name="color" />
+        <button type="submit">Inserir animal</button>
+      </form>
+      <ul id="animalList">
 
-</body>
-
+      </ul>
+    </div>
+  </body>
 </html>

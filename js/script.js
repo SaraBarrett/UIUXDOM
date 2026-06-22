@@ -93,10 +93,37 @@ function login() {
   myBtn.style.display = "none";
 }
 
-btnChangeMode.addEventListener("click", changeMode);
+//eventos de mouse: mouse à escuta
+// btnChangeMode.addEventListener("click", changeMode);
 
-btnChangeMode.addEventListener("click", function () {
-  alert("botão de modo dia e noite!");
+// btnChangeMode.addEventListener("click", function (event) {
+//   console.log(event);
+//   alert("botão de modo dia e noite!");
+// });
+
+// myBanner.addEventListener("mouseover", changeMode);
+
+window.addEventListener("keydown", function (event) {
+  //console.log(event);
+  if (event.key == "t") {
+    alert("eventos de teclado!");
+  }
 });
 
-myBanner.addEventListener('mouseover', changeMode);
+//tratamento de forms
+let myForm = document.getElementById("animalFarm");
+
+myForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  //ler os dados dos inputs (de uma vez lê tudo)
+  let formData = new FormData(this);
+  let myUl = document.getElementById('animalList');
+
+  //criar um li
+  let myLi = document.createElement("li");
+  myLi.innerText = formData.get("animal") + " da cor " + formData.get("color");
+  myUl.appendChild(myLi);
+
+  this.reset();
+});
