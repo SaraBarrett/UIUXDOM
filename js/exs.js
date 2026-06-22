@@ -125,10 +125,20 @@ function shout() {
   console.log("SHHOOOUUTTT");
 }
 
-//colocar botões à escuta
-btnEvents.addEventListener("click", twist);
-btnEvents.addEventListener("mouseover", shout);
+//colocar botões à escuta.
+// o if previne os erros, faz com que só se coloque o elemento à escuta se esse elemento existir no nosso dom.
+if (btnEvents) {
+  btnEvents.addEventListener("click", twist);
+  btnEvents.addEventListener("mouseover", shout);
+}
 
-randomColorBtn.addEventListener("click", randomColor);
-createBtnsEl.addEventListener("click", createBtns);
-btnEvents.addEventListener("click", randomColor);
+if (randomColorBtn) {
+  randomColorBtn.addEventListener("click", randomColor);
+}
+if (createBtnsEl) {
+  createBtnsEl.addEventListener("click", createBtns);
+}
+
+if (btnEvents) {
+  btnEvents.addEventListener("click", randomColor);
+}
