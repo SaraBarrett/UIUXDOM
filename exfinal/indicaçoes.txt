@@ -1,0 +1,36 @@
+Apresentação dia 27 de Fevereiro de manhã
+
+Enquadramento:
+Usando o html e o css exFinal da pasta do Git, mexa exclusivamente na programação em JavaScript (excepto os extras), utilizando manipulação do DOM para tornar o
+portfólio interativo.
+
+Objetivo:
+Implementar todas as funcionalidades interativas usando JavaScript externo,
+aplicando corretamente eventos e manipulação dinâmica do DOM.
+
+Funcionalidades Obrigatórias:
+• Botão para alternar entre tema claro e escuro funcional.
+• Botão para trocar a imagem principal dinamicamente (para uma outra por defeito) funcional
+• Botão para adicionar um novo hobby à list a (abre um prompt, pergunta o hobby e adiciona à lista) funcional
+• Formulário que atualiza nome, descrição, imagem e altera o background para cor escolhida sem recarregar a página
+• Uso obrigatório de addEventListener()
+• Uso obrigatório de event.preventDefault() no formulário.
+• Manipulação de innerText / textContent, src, classList e style
+• ao clicar na tecla e, é lançado um alert a perguntar 'tem a certeza que acabou o exercício?'
+• Gerador de cores aleatórias no background
+
+Desafios Extras:
+• Contador de atualizações do perfil, usando o localStorage. Deverá mostrar na página quantas vezes foi actualizado.
+• Botão de reset para voltar ao estado inicial (sem recarregar a página).
+
+
+Regras Técnicas:
+• O JavaScript deve estar num ficheiro externo (ex: script.js).
+• Código organizado e comentado.
+• Sem erros na consola do navegador.
+
+Critérios de Avaliação (validados pela apresentação):
+• Funcionalidade completa (15)
+• Uso correto do DOM e eventos (2)
+• Organização do código (1)
+• Implementação dos desafios extras (2)
